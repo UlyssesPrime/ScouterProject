@@ -3,13 +3,13 @@
  */
 
 public final class PitEntry {
-	
+
 	public final String teamName;
 	public final String teamNumber;
-	
+
 	//Autonomous capabilities
 	public final String autoState;
-	
+
 	//Defense Crossing Capabilities
 	public final boolean portcullis,
 			cdf,
@@ -19,13 +19,13 @@ public final class PitEntry {
 			roughTerrain,
 			rockWall,
 			lowBar;
-	
+
 	//Scoring capabilities
 	public final boolean high, low;
 	public final boolean scale;
-	
+
 	public final boolean isDefensive;
-	
+
 	/**
 	 * @param teamName
 	 * @param teamNumber
@@ -75,7 +75,7 @@ public final class PitEntry {
 		this.scale = scale;
 		this.isDefensive = isDefensive;
 	}
-	
+
 	/**
 	 * @param theirName
 	 * @param theirNum
@@ -119,7 +119,7 @@ public final class PitEntry {
 				scale,
 				isDefensive);
 	}
-	
+
 	@Override
 	public String toString () {
 		return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
@@ -139,15 +139,13 @@ public final class PitEntry {
 				this.scale,
 				this.isDefensive);
 	}
-	
+
 	//UNIT TEST
 	public static void main(final String... args){
-		
+
 		//this is a test
 		boolean[] blah = {true,true,true,true,true,true,true,true};
 		PitEntry entry = new PitEntry("Voltage", "386", "move", blah,true,true,true,true );
 		System.out.println(entry);
-		
 	}
-	
 }
