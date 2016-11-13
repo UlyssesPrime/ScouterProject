@@ -18,7 +18,7 @@ public final class StandEntry {
 	public int highGoalAttempts, highGoalScoring, lowGoalAttempts, lowGoalScoring;
 	public boolean didScale;
 
-	private StandEntry(final String teamName, final String teamNumber, final boolean drive, final boolean cross,
+	public StandEntry(final String teamName, final String teamNumber, final boolean drive, final boolean cross,
 									   final boolean scoreHigh, final boolean scoreLow, int portcullis, int cdf, int moat,
 										 int drawBridge, int roughTerrain, int rockWall, int lowBar, int highGoalAttempts,
 										 int highGoalScoring, int lowGoalAttempts, int lowGoalScoring, boolean didScale){
@@ -41,26 +41,19 @@ public final class StandEntry {
 											 this.lowGoalScoring = lowGoalScoring;
 											 this.didScale = didScale;
 										 }
-	public StandEntry (final String teamName, final String teamNumber, final boolean drive, final boolean cross,
-										 final boolean scoreHigh, final boolean scoreLow, int portcullis, int cdf, int moat,
-										 int drawBridge, int roughTerrain, int rockWall, int lowBar, int highGoalAttempts,
-										 int highGoalScoring, int lowGoalAttempts, int lowGoalScoring, int didScale){
-											 this(teamName, teamNumber, dive, cross, scoreHigh, scoreLow, portcullis, cdf, moat,
-											 drawBridge, roughTerrain, rockWall, lowBar, highGoalAttempts, highGoalScoring, lowGoalAttempts,
-											 lowGoalScoring, didScale);
-										 }
+
 	@Override
 	public String toString(){
-		return String.format(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, this.teamName,
-												 this.teamNumber, this.drive, this.cross, this.scoreHigh, this.scoreLow, this.portcullis,
-												 this.cdf, this.moat, this.drawBridge, this.roughTerrain, this.rockWall, this.lowBar,
-												 this.highGoalAttempts, this.highGoalScoring, this.lowGoalAttempts, this.lowGoalScoring,
-												 this.didScale);
+		return String.format(this.teamName,this.teamNumber, this.drive, this.cross, this.scoreHigh, this.scoreLow,
+												 this.portcullis, this.cdf, this.moat, this.drawBridge, this.roughTerrain, this.rockWall,
+												 this.lowBar, this.highGoalAttempts, this.highGoalScoring, this.lowGoalAttempts,
+												 this.lowGoalScoring, this.didScale);
 
 	}
-	public static void main(String... args){
-		boolean eh[] = [true, true, true, true];
-		
-	}
-
+	public static void main(String[] args){
+	//boolean eh[] = {true, true, true, true};
+	//int nums[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+		StandEntry entry = new StandEntry("Voltage", "386", true, true, true, true, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, true);
+		System.out.println(entry);
+	} //FIGURE OUT WHAT THE FUCK IS GOING ON
 }
