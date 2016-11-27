@@ -6,17 +6,17 @@ public final class StandEntry {
 	public final String teamName;
 	public final String teamNumber;
 
-	public int finalScore;
+	public final int finalScore;
 
 	//What was done in autonomous
-	public boolean drive, cross, scoreHigh, scoreLow;
+	public final boolean drive, cross, scoreHigh, scoreLow;
 
 	//Defenses crossed in tele-op
-	public int portcullis, cdf, ramparts, moat, drawBridge, roughTerrain, rockWall, lowBar;
+	public final int portcullis, cdf, ramparts, moat, drawBridge, roughTerrain, rockWall, lowBar;
 
 	//Scoring in tele-op
-	public int highGoalAttempts, highGoalScoring, lowGoalAttempts, lowGoalScoring;
-	public boolean didScale;
+	public final int highGoalAttempts, highGoalScoring, lowGoalAttempts, lowGoalScoring;
+	public final boolean didScale;
 
 	private StandEntry(final String teamName, final String teamNumber, boolean drive, boolean cross,
 									 	 boolean scoreHigh, boolean scoreLow, int portcullis, int cdf, int moat,

@@ -9,6 +9,7 @@ public class Main {
                 frame.setSize(500, 400);
                 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                 frame.setVisible(true);
+                frame.setLayout(null);
             }
         });
     }
