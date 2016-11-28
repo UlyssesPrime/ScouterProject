@@ -25,7 +25,7 @@ public class PanelSwap extends JPanel implements ActionListener {
         add(firstPanel);
     }
 
-    /** Listens to the buttons and perfomr the swap. */
+    /** Listens to the buttons and performs the swap. */
     public void actionPerformed(ActionEvent e) {
 
         for (Component component : getComponents())
