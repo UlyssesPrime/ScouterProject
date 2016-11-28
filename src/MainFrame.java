@@ -23,7 +23,6 @@ public class MainFrame extends JPanel implements ActionListener {
         add(originPanel);
     }
 
-      /** Listens to the buttons and performs the swap. */
     public void actionPerformed(ActionEvent e) {
 
       for (Component component : getComponents())
@@ -40,29 +39,22 @@ public class MainFrame extends JPanel implements ActionListener {
         revalidate();
       }
 
-      /**
-       * Create the GUI and show it. For thread safety, this method should be
-       * invoked from the event-dispatching thread.
-       */
     private static void createAndShowGUI() {
-          // Create and set up the window.
+
         JFrame frame = new JFrame("Voltage Scouter 386 - 2015 Edition");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setPreferredSize(new Dimension(600, 600));
         frame.setLayout(null);
 
-          // Create and set up the content pane.
         JComponent newContentPane = new MainFrame();
-        newContentPane.setOpaque(true); // content panes must be opaque
+        newContentPane.setOpaque(true);
         frame.setContentPane(newContentPane);
 
-          // Display the window.
         frame.pack();
         frame.setVisible(true);
       }
       public static void main(String[] args) {
-          // Schedule a job for the event-dispatching thread:
-          // creating and showing this application's GUI.
+
           javax.swing.SwingUtilities.invokeLater(new Runnable() {
               public void run() {
                   createAndShowGUI();
