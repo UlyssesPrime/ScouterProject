@@ -16,25 +16,25 @@ public class MainFrame extends JPanel implements ActionListener {
         JTextField studentNameField = new JTextField("Your Name Here");
 
         JRadioButton nothingAutoButton = new JRadioButton("Nothing");
-        birdButton.setMnemonic(KeyEvent.VK_B);
-        birdButton.setActionCommand("Nothing");
-        birdButton.setSelected(true);
+        nothingAutoButton.setMnemonic(KeyEvent.VK_B);
+        nothingAutoButton.setActionCommand("Nothing");
+        nothingAutoButton.setSelected(true);
 
         JRadioButton driveAutoButton = new JRadioButton("Drive");
-        catButton.setMnemonic(KeyEvent.VK_C);
-        catButton.setActionCommand("Drive");
+        driveAutoButton.setMnemonic(KeyEvent.VK_C);
+        driveAutoButton.setActionCommand("Drive");
 
         JRadioButton crossAutoButton = new JRadioButton("Cross");
-        dogButton.setMnemonic(KeyEvent.VK_D);
-        dogButton.setActionCommand("Cross");
+        crossAutoButton.setMnemonic(KeyEvent.VK_D);
+        crossAutoButton.setActionCommand("Cross");
 
         JRadioButton scoreHighAutoButton = new JRadioButton("Score High");
-        rabbitButton.setMnemonic(KeyEvent.VK_R);
-        rabbitButton.setActionCommand("Score High");
+        scoreHighAutoButton.setMnemonic(KeyEvent.VK_R);
+        scoreHighAutoButton.setActionCommand("Score High");
 
         JRadioButton scoreLowAutoButton = new JRadioButton("Score Low");
-        rabbitButton.setMnemonic(KeyEvent.VK_R);
-        rabbitButton.setActionCommand("Score Low");
+        scoreLowAutoButton.setMnemonic(KeyEvent.VK_R);
+        scoreLowAutoButton.setActionCommand("Score Low");
 
         ButtonGroup group = new ButtonGroup();
         group.add(nothingAutoButton);
@@ -42,6 +42,7 @@ public class MainFrame extends JPanel implements ActionListener {
         group.add(crossAutoButton);
         group.add(scoreHighAutoButton);
         group.add(scoreLowAutoButton);
+
 
         JButton pitButton = new JButton("Pits");
         pitButton.addActionListener(this);
@@ -100,13 +101,13 @@ public class MainFrame extends JPanel implements ActionListener {
         originPanel.add(pitButton);
         originPanel.add(standButton);
 
-        //pitPanel.add(teamNameField);
-        //pitPanel.add(teamNumberField);
-        //pitPanel.add(nothingAutoButton);
-        //pitPanel.add(driveAutoButton);
-        //pitPanel.add(crossAutoButton);
-        //pitPanel.add(scoreHighAutoButton);
-        //pitPanel.add(scoreLowAutoButton);
+      //  pitPanel.add(teamNameField);
+      //  pitPanel.add(teamNumberField);
+        pitPanel.add(nothingAutoButton);
+        pitPanel.add(driveAutoButton);
+        pitPanel.add(crossAutoButton);
+        pitPanel.add(scoreHighAutoButton);
+        pitPanel.add(scoreLowAutoButton);
         pitPanel.add(portcullisButton);
         pitPanel.add(cdfButton);
         pitPanel.add(moatButton);
@@ -117,29 +118,31 @@ public class MainFrame extends JPanel implements ActionListener {
         pitPanel.add(scaleButton);
 
         add(originPanel);
+
         setLayout(new GridBagLayout());
         GridBagConstraints gc = new GridBagConstraints();
 
         gc.weightx = 0.5;
         gc.weighty = 0.5;
 
+
         gc.gridx = 0;
         gc.gridy = 0;
-        add(teamNameField);
+        pitPanel.add(teamNameField);
 
         gc.gridx = 1;
-        add(teamNumberField);
+        pitPanel.add(teamNumberField);
 
         gc.gridx = 0;
         gc.gridy = 1;
-        add()
+        //add()
 
 
     }
 
     public void actionPerformed(ActionEvent e) {
       final JButton source = (JButton)e.getSource();
-      if (source.equals(pitButton || standButton)){
+      //if (source.equals(pitButton || standButton)){
 
         for (Component component : getComponents())
             if (originPanel == component) {
@@ -151,7 +154,7 @@ public class MainFrame extends JPanel implements ActionListener {
                 remove(originPanel);
                 add(standPanel);
             }
-      }
+      //}
       //else if(source.){
 
       //}
