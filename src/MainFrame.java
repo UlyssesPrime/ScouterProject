@@ -119,7 +119,7 @@ public class MainFrame extends JPanel implements ActionListener {
 
         add(originPanel);
 
-        setLayout(new GridBagLayout());
+        pitPanel.setLayout(new GridBagLayout());
         GridBagConstraints gc = new GridBagConstraints();
 
         gc.weightx = 0.5;

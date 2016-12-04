@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PitsGUI">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="dc6e0" class="javax.swing.JRadioButton" binding="nothingRadioButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <name value="Autonomous"/>
+          <text value="Nothing"/>
+        </properties>
+      </component>
+      <component id="737fb" class="javax.swing.JRadioButton" binding="movesRadioButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Moves"/>
+        </properties>
+      </component>
+      <component id="70e5d" class="javax.swing.JRadioButton" binding="crossesRadioButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Crosses"/>
+        </properties>
+      </component>
+      <component id="eca4c" class="javax.swing.JRadioButton" binding="scoresLowRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Scores Low"/>
+        </properties>
+      </component>
+      <component id="f19a5" class="javax.swing.JRadioButton" binding="scoresHighRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Scores High"/>
+        </properties>
+      </component>
+      <component id="335fa" class="javax.swing.JCheckBox" binding="portcullisCheckBox" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Portcullis"/>
+        </properties>
+      </component>
+      <component id="87119" class="javax.swing.JCheckBox" binding="chevalDeFriseCheckBox" default-binding="true">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cheval De Frise"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="autonomous">
+      <member id="dc6e0"/>
+      <member id="dc6e0"/>
+      <member id="737fb"/>
+      <member id="70e5d"/>
+      <member id="eca4c"/>
+      <member id="f19a5"/>
+    </group>
+  </buttonGroups>
+</form>
