@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PitsGUI">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="15" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="20" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="410" height="574"/>
@@ -57,7 +57,7 @@
       </component>
       <component id="3e933" class="javax.swing.JCheckBox" binding="moatCheckBox" default-binding="true">
         <constraints>
-          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Moat"/>
@@ -65,7 +65,7 @@
       </component>
       <component id="c6b65" class="javax.swing.JCheckBox" binding="drawBridgeCheckBox" default-binding="true">
         <constraints>
-          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Draw Bridge"/>
@@ -73,7 +73,7 @@
       </component>
       <component id="f20b6" class="javax.swing.JCheckBox" binding="roughTerrainCheckBox" default-binding="true">
         <constraints>
-          <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Rough Terrain"/>
@@ -81,7 +81,7 @@
       </component>
       <component id="e0bd4" class="javax.swing.JCheckBox" binding="rockWallCheckBox" default-binding="true">
         <constraints>
-          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Rock Wall"/>
@@ -89,7 +89,7 @@
       </component>
       <component id="4461a" class="javax.swing.JCheckBox" binding="lowBarCheckBox" default-binding="true">
         <constraints>
-          <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="13" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Low Bar"/>
@@ -97,7 +97,7 @@
       </component>
       <component id="fafef" class="javax.swing.JCheckBox" binding="scaleCheckBox" default-binding="true">
         <constraints>
-          <grid row="13" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="14" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Scale"/>
@@ -163,7 +163,7 @@
       </component>
       <component id="7b2f8" class="javax.swing.JButton" binding="submitButton" default-binding="true">
         <constraints>
-          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="197" height="32"/>
           </grid>
         </constraints>
@@ -173,10 +173,51 @@
       </component>
       <component id="e5882" class="javax.swing.JButton" binding="clearButton" default-binding="true">
         <constraints>
-          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Clear"/>
+        </properties>
+      </component>
+      <component id="c6a32" class="javax.swing.JCheckBox" binding="rampartsCheckBox" default-binding="true">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Ramparts"/>
+        </properties>
+      </component>
+      <component id="48f57" class="javax.swing.JCheckBox" binding="highCheckBox" default-binding="true">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="High"/>
+        </properties>
+      </component>
+      <component id="35f53" class="javax.swing.JCheckBox" binding="lowCheckBox" default-binding="true">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Low"/>
+        </properties>
+      </component>
+      <component id="9e2cc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="Scoring"/>
+        </properties>
+      </component>
+      <component id="fe650" class="javax.swing.JCheckBox" binding="isDefensiveCheckBox" default-binding="true">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Is Defensive?"/>
         </properties>
       </component>
     </children>
@@ -189,6 +230,21 @@
       <member id="70e5d"/>
       <member id="eca4c"/>
       <member id="f19a5"/>
+    </group>
+    <group name="teleoperated">
+      <member id="335fa"/>
+      <member id="87119"/>
+      <member id="3e933"/>
+      <member id="c6b65"/>
+      <member id="f20b6"/>
+      <member id="e0bd4"/>
+      <member id="4461a"/>
+      <member id="fafef"/>
+      <member id="c6a32"/>
+    </group>
+    <group name="scoring">
+      <member id="48f57"/>
+      <member id="35f53"/>
     </group>
   </buttonGroups>
 </form>

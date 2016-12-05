@@ -8,7 +8,11 @@ public final class PitEntry {
 	public final String teamNumber;
 
 	//Autonomous capabilities
-	public final String autoState;
+	public final boolean nothing;
+	public final boolean moves;
+	public final boolean crosses;
+	public final boolean scoresLow;
+	public final boolean scoresHigh;
 
 	//Defense Crossing Capabilities
 	public final boolean portcullis,
@@ -29,7 +33,6 @@ public final class PitEntry {
 	/**
 	 * @param teamName
 	 * @param teamNumber
-	 * @param autoState Possible Inputs: "none", "move", "cross", "shoot"
 	 * @param portcullis
 	 * @param cdf
 	 * @param ramparts
@@ -45,7 +48,11 @@ public final class PitEntry {
 	private PitEntry(
 			final String teamName,
 			final String teamNumber,
-			final String autoState,
+			final boolean nothing,
+			final boolean moves,
+			final boolean crosses,
+			final boolean scoresLow,
+			final boolean scoresHigh,
 			final boolean portcullis,
 			final boolean cdf,
 			final boolean ramparts,
@@ -61,7 +68,11 @@ public final class PitEntry {
 	{
 		this.teamName = teamName;
 		this.teamNumber = teamNumber;
-		this.autoState = autoState;
+		this.nothing = nothing;
+        this.moves = moves;
+        this.crosses = crosses;
+        this.scoresLow = scoresLow;
+        this.scoresHigh = scoresHigh;
 		this.portcullis = portcullis;
 		this.cdf = cdf;
 		this.ramparts = ramparts;
@@ -79,7 +90,6 @@ public final class PitEntry {
 	/**
 	 * @param theirName
 	 * @param theirNum
-	 * @param autoState Possible Inputs: "none", "move", "cross", "shoot"
 	 * @param teleOp A boolean array with the following structure: portcullis,
 			cdf,
 			ramparts,
@@ -96,7 +106,7 @@ public final class PitEntry {
 	public PitEntry (
 			final String theirName,
 			final String theirNum,
-			final String autoState,
+			final boolean[] autonomous,
 			final boolean[] teleOp,
 			final boolean high,
 			final boolean low,
@@ -105,7 +115,11 @@ public final class PitEntry {
 	{
 		this(theirName,
 				theirNum,
-				autoState,
+				autonomous[0],
+                autonomous[1],
+                autonomous[2],
+                autonomous[3],
+                autonomous[4],
 				teleOp[0],
 				teleOp[1],
 				teleOp[2],
@@ -122,10 +136,14 @@ public final class PitEntry {
 
 	@Override
 	public String toString () {
-		return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
+		return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
 				this.teamName,
 				this.teamNumber,
-				this.autoState,
+				this.nothing,
+                this.moves,
+                this.crosses,
+                this.scoresLow,
+                this.scoresHigh,
 				this.portcullis,
 				this.cdf,
 				this.ramparts,
@@ -144,8 +162,9 @@ public final class PitEntry {
 	public static void main(final String... args){
 
 		//this is a test
-		boolean[] blah = {true,true,true,true,true,true,true,true};
-		PitEntry entry = new PitEntry("Voltage", "386", "move", blah,true,true,true,true );
+        boolean[] auto = {true, false, false, false};
+		boolean[] blah = {true,true,true,true,true,true,true,true, true, true, true, true, true, true, true};
+		PitEntry entry = new PitEntry("Voltage", "386", auto, blah,true,true,true,true );
 		System.out.println(entry);
 	}
 }
